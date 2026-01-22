@@ -5,8 +5,6 @@ on:
     branches:
       - main
       - worktp
-  schedule:
-    - cron: "*/10 * * * *"
 
 jobs:
   test-and-report:
