@@ -60,3 +60,7 @@ jobs:
           name: allure-html-report
           path: allure-report/
           retention-days: 30
+
+      - name: Fail job if tests failed
+        if: steps.pytest.outcome == 'failure'
+        run: exit 1
