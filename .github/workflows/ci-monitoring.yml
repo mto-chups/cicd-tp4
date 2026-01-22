@@ -6,7 +6,7 @@ on:
       - main
       - worktp
   schedule:
-    - cron: "0 */6 * * *"
+    - cron: "*/10 * * * *"
 
 jobs:
   test-and-report:
